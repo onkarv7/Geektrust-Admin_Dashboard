@@ -1,0 +1,39 @@
+.userDetails{
+    border-collapse: collapse;
+    width:100%;
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+}
+
+.userDetails>thead>tr>th{
+    padding-bottom:0.6rem;
+    width: 20%;
+    text-align: left;
+}
+
+.userDetails>tbody>tr>td{
+    padding-top:0.75rem;
+    padding-bottom:0.6rem;
+    width: 20%;
+    text-align: left;
+}
+
+input.largerCheckbox{
+    width: 18px;
+    height:18px;
+}
+
+button{
+    background-color: white;
+    margin-right: 2px;
+    border:none;
+    
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.selected{
+    background-color: lightgray;
+}

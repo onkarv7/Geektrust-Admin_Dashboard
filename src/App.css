@@ -1,38 +1,118 @@
-.App {
+body{
+  font-size: 16px;
+  color: #272727;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1170px;
+  padding-top: 1rem;
+}
+
+.search-box{
+  width:100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: 0;
+  margin-bottom: 1rem;
+  font-size: 15px;
+}
+
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  border-right: 0;
+  width: 8%;
+  color: #272727;
+}
+
+tr th:last-child, tr td:last-child{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+tr td:nth-child(4), tr td:nth-child(4) input{
+  text-transform: capitalize;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+td input{
+  font-size: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.actionButton{
+  font-size: 18px;
+  background: transparent;
+  border: 0;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.saveButton{
+  color: #42ac46;
+}
+
+.deleteButton{
+  color: #ff5071;
+}
+
+/* Pagination component CSS */
+
+.footer-controls{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: .25rem .75rem;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination-ul{
+  display: flex;
+  list-style: none;
+  padding-left: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-number{
+  padding: 0 .9rem;
+}
+
+.page-number-link{
+  width: 35px;
+  height: 35px;
+  border: 1px solid #0084ff;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 35px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #1990ff;
+  cursor: pointer;
+}
+
+.page-number-link-active{
+  color: #1990ff;
+  background: transparent;
+}
+
+.page-number-link:disabled{
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.delete-user{
+  background: #ff5071;
+  color: #fff;
+  border: 0;
+  padding: 0.65rem 1rem;
+  border-radius: 20px;
+  font-size: 15px;
 }
