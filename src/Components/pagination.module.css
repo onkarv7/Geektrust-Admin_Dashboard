@@ -1,0 +1,38 @@
+
+.pagination{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    
+}
+.mypagination{
+    display: flex;
+    width: 100%;
+    margin-left: 9rem;
+}
+
+.navBtns{
+    border-radius: 50%;
+    background-color: #00a8ff;
+    color:#FFF;
+    width: 30px;
+    height: 30px;
+    margin-right: 2.2rem;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    
+}
+.navBtns.active{
+    background-color: #FFF;
+    color:#00a8ff;
+    border:1px solid #00a8ff;
+}
+
+.navBtns:disabled{
+    color:#7f8fa6;
+    background-color:#dcdde1;
+    border:1px solid #7f8fa6;
+    pointer-events: none;
+}
